@@ -16,8 +16,11 @@
 </template>
 <script lang="ts" setup>
 import { ref } from "vue"
+import { useStore } from 'vuex'
 import LocalDB from "./libs/LocalDB"
-const events = ref<StoreRecord<Message>[]>([]), message = ref('')
+const events = ref<StoreRecord<Message>[]>([]), message = ref(''),
+store = useStore()
+store.dispatch('TestStore/getMessage1').then(console.log)
 let test = () => {}
 (async () => {
   //await LocalDB.delete('newDB')

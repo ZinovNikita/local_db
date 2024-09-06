@@ -12,7 +12,8 @@
     "@primevue/themes": "^4.0.5",
     "primevue": "^4.0.5",
     "quill": "^2.0.2",
-    "vue": "^3.4.37"
+    "vue": "^3.4.37",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@primevue/auto-import-resolver": "^4.0.5",

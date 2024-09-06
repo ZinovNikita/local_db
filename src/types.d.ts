@@ -13,6 +13,6 @@ type Message = {
 }
 type StoreRecord<T> = {
   key: number
-  value: T
+  value: T|null
   updated: Date
 }
